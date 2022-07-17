@@ -9,11 +9,11 @@ function PostCard({ thumbnail, title, slug, description }) {
         <Link href={`/${slug}`}>
           <div className="relative h-52 my-2 sm:cursor-pointer">
             <Image
-              src={thumbnail}
+              src={`${thumbnail}`}
               layout="fill"
               alt={title}
               placeholder="blur"
-              blurDataURL={thumbnail}
+              blurDataURL={`${thumbnail}`}
               objectFit="cover"
               priority
             />

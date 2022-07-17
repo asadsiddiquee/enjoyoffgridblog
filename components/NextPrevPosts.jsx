@@ -34,12 +34,12 @@ const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
               <Link href={prevPost ? `/${allPostData[index - 1].slug}` : ``}>
                 <div>
                   <Image
-                    src={allPostData[index - 1].thumbnail}
+                    src={`${allPostData[index - 1].thumbnail}`}
                     layout="fill"
                     objectFit="cover"
                     alt={allPostData[index - 1].title}
                     placeholder="blur"
-                    blurDataURL={allPostData[index - 1].thumbnail}
+                    blurDataURL={`${allPostData[index - 1].thumbnail}`}
                   />
                 </div>
               </Link>
@@ -78,12 +78,12 @@ const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
               <Link href={nextPost ? `/${allPostData[index + 1].slug}` : ``}>
                 <div>
                   <Image
-                    src={allPostData[index + 1].thumbnail}
+                    src={`${allPostData[index + 1].thumbnail}`}
                     layout="fill"
                     objectFit="cover"
                     alt={allPostData[index + 1].title}
                     placeholder="blur"
-                    blurDataURL={allPostData[index + 1].thumbnail}
+                    blurDataURL={`${allPostData[index + 1].thumbnail}`}
                   />
                 </div>
               </Link>
