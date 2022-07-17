@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* bg  #ffca00 */
+/* text #45810e */
+@layer base {
+    body {
+        @apply scroll-smooth 
+    }
+    ::-webkit-scrollbar {
+        @apply md:w-2 w-1
+    }
+    ::-webkit-scrollbar-track{
+        @apply bg-purple-100
+    }
+    ::-webkit-scrollbar-thumb{
+        @apply bg-gradient-to-b from-purple-500/80 to-red-500/80 rounded-3xl  shadow-xl
+    }
+}
