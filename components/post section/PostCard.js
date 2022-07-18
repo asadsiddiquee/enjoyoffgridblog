@@ -20,18 +20,21 @@ function PostCard({ thumbnail, title, slug, description }) {
           </div>
         </Link>
       </div>
-      <Link href={`/${slug}`}>
-        <h2 className="text-xl font-out my-2 font-bold text-[#45810e] sm:cursor-pointer  ">
-          {title}
-        </h2>
-      </Link>
+      <h2>
+        <Link href={`/${slug}`}>
+          <a className="text-xl font-out my-2 font-bold text-[#45810e] sm:cursor-pointer  ">
+            {title}
+          </a>
+        </Link>
+      </h2>
       <p className="font-poppins">{description}..</p>
-
-      <Link href={`/${slug}`}>
-        <a className="text-lg font-out bg-[#ffca00] hover:underline ">
-          Read More
-        </a>
-      </Link>
+      <button>
+        <Link href={`/${slug}`}>
+          <a className="text-lg font-out bg-[#ffca00] hover:underline ">
+            Read More
+          </a>
+        </Link>
+      </button>
     </div>
   );
 }
