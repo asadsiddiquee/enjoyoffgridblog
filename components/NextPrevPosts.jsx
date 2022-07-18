@@ -4,12 +4,8 @@ import React from "react";
 
 const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
   return (
-    <div className="grid grid-cols-2  mt-5 gap-4">
-      <div
-        className={
-          prevPost ? `grid grid-cols-1  text-center` : ` pointer-events-none`
-        }
-      >
+    <div className="grid grid-cols-2  mt-5 gap-4 ">
+      <div className={prevPost ? `grid grid-cols-1  text-center` : ` hidden`}>
         <div
           className={
             prevPost
@@ -50,11 +46,7 @@ const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
         )}
       </div>
       {/* -------------------------------------- */}
-      <div
-        className={
-          nextPost ? `grid grid-cols-1 text-center ` : `pointer-events-none`
-        }
-      >
+      <div className={nextPost ? `grid grid-cols-1 text-center ` : `hidden`}>
         <div
           className={
             nextPost
