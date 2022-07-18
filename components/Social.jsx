@@ -10,7 +10,7 @@ import {
 function Social(props) {
   const { postData } = props;
   return (
-    <div className="space-x-1">
+    <div className="space-x-3 py-3 text-center">
       <FacebookShareButton
         url={`https://enjoyoffgrid.com/${postData.slug}`}
         quote={`${postData.metaTitle}`}

@@ -13,8 +13,8 @@ const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
         <div
           className={
             prevPost
-              ? `text-cyan-700 inline-block self-start underline font-bold sm:cursor-pointer font-out`
-              : `text-slate-200 underline font-bold `
+              ? `text-cyan-700 inline-block text-center self-start underline font-bold sm:cursor-pointer font-out`
+              : `text-slate-200 underline font-bold text-center`
           }
         >
           <Link href={prevPost ? `/${allPostData[index - 1].slug}` : ``}>
@@ -58,8 +58,8 @@ const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
         <div
           className={
             nextPost
-              ? `inline-block self-start text-cyan-700 underline font-bold sm:cursor-pointer font-out`
-              : `text-slate-200 underline font-bold `
+              ? `inline-block text-center self-start text-cyan-700 underline font-bold sm:cursor-pointer font-out`
+              : `text-slate-200 underline font-bold text-center`
           }
         >
           <Link href={nextPost ? `/${allPostData[index + 1].slug}` : ``}>
