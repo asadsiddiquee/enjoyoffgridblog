@@ -32,10 +32,16 @@ function Sidebar(props) {
           </a>
         </Link>
       </div>
-      <div className="my-6 md:mt-10 text-center space-y-2 " id="categories">
+      <div
+        className="w-full my-6 md:mt-10 text-center space-y-2 "
+        id="categories"
+      >
         <h2 className="font-out font-bold text-2xl mb-8 ">Categories</h2>
         {Array.from(categories).map((category) => (
-          <div key={category} className="text-lg bg-[#ffca00] hover:underline">
+          <div
+            key={category}
+            className="inline space-x-2 text-lg bg-[#ffca00] hover:underline  "
+          >
             <Link href={`/category/${category}`}>
               <a className="text-center font-out"> {category}</a>
             </Link>

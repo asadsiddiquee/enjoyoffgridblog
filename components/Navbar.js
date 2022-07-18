@@ -11,7 +11,7 @@ function Navbar() {
     setNav(!nav);
   };
   return (
-    <div className="container mx-auto flex justify-between items-center px-2 py-1 md:px-24 sticky top-0 left-0 sm:relative bg-white z-50 ">
+    <div className="container mx-auto flex justify-between items-center px-2 py-1 md:px-8 sticky top-0 left-0 sm:relative bg-white z-50 ">
       <div>
         <Link href="/">
           <div className="sm:hover:cursor-pointer relative w-[100px] h-[107px]">
