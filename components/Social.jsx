@@ -27,7 +27,7 @@ function Social(props) {
 
       <PinterestShareButton
         url={`https://enjoyoffgrid.com/${postData.slug}`}
-        media={`${postData.thumbnail}`}
+        media={`https://enjoyoffgrid.com/${postData.thumbnail}`}
       >
         <PinterestIcon size={32} round />
       </PinterestShareButton>
