@@ -18,7 +18,6 @@ function Social(props) {
       >
         <FacebookIcon size={32} round />
       </FacebookShareButton>
-
       <TwitterShareButton
         url={`https://enjoyoffgrid.com/${postData.slug}`}
         title={`${postData.metaTitle}`}
