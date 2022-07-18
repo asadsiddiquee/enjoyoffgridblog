@@ -63,7 +63,7 @@ export default function Post({ postData, allPostData }) {
   return (
     <Layout>
       <div className="container mx-auto sm:grid grid-cols-6 gap-6">
-        <div className="col-start-1 col-end-5 px-2 py-4  md:px-8 ">
+        <div className="col-start-1 col-end-5 px-2 py-4  md:px-8 lg:ml-16">
           <Head>
             <title>{postData.metaTitle}</title>
             <meta name="description" content={postData.metaDesc} />
@@ -90,11 +90,10 @@ export default function Post({ postData, allPostData }) {
                 {postData.title}
               </p>
             </div>
-            <article className="prose lg:prose-lg prose-p:text-black prose-p: prose-li:text-slate-700-600 prose-p:font-poppins prose-li:font-poppins prose-h1:font-out prose-h2:font-out prose-h3:font-out prose-h4:font-out prose-h1:text-3xl md:prose-h1:text-4xl lg:prose-h1:text-5xl prose-h2:text-2xl md:prose-h2:text-3xl lg:prose-h2:text-4xl  prose-h3:text-xl md:prose-h3:text-2xl lg:prose-h3:text-3xl  ">
+            <article className=" prose lg:prose-lg prose-p:text-black prose-p: prose-li:text-slate-700-600 prose-p:font-poppins prose-li:font-poppins prose-h1:font-out prose-h2:font-out prose-h3:font-out prose-h4:font-out prose-h1:text-3xl md:prose-h1:text-4xl lg:prose-h1:text-5xl prose-h2:text-2xl md:prose-h2:text-3xl lg:prose-h2:text-4xl  prose-h3:text-xl md:prose-h3:text-2xl lg:prose-h3:text-3xl  ">
               <MDXRemote {...postData.mdxSource} components={components} />
             </article>
           </div>
-
           <NextPrevPosts
             prevPost={prevPost}
             nextPost={nextPost}
