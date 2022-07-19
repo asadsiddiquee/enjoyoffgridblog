@@ -4,7 +4,7 @@ import React from "react";
 
 const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
   return (
-    <div className="grid grid-cols-2  mt-5 gap-4 ">
+    <div className="grid grid-cols-2 mt-5 py-4 gap-4 border-t-2">
       <div className={prevPost ? `grid grid-cols-1  text-center` : ` hidden`}>
         <div
           className={
@@ -20,7 +20,7 @@ const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
 
         {prevPost ? (
           <div className="flex flex-col justify-between">
-            <div className="inline-block font-out text-sm sm:text-lg md:text-xl text-[#45810e] mt-2 text-center sm:cursor-pointer">
+            <div className="inline-block font-bold font-out text-sm sm:text-lg md:text-xl text-black mt-2 text-center sm:cursor-pointer">
               <Link href={prevPost ? `/${allPostData[index - 1].slug}` : ``}>
                 <a>{allPostData[index - 1].title.toUpperCase()}</a>
               </Link>
@@ -60,7 +60,7 @@ const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
         </div>
         {nextPost ? (
           <div className=" flex flex-col justify-between ">
-            <div className="inline-block  font-out text-sm sm:text-lg md:text-xl text-[#45810e] mt-2 text-center cursor-pointer">
+            <div className="inline-block font-bold font-out text-sm sm:text-lg md:text-xl text-black mt-2 text-center cursor-pointer">
               <Link href={nextPost ? `/${allPostData[index + 1].slug}` : ``}>
                 <a>{allPostData[index + 1].title.toUpperCase()}</a>
               </Link>

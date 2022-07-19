@@ -21,8 +21,8 @@ const components = {
       blurDataURL={props.src}
     />
   ),
+  Link,
 };
-// -----------------
 
 // getting data from mdx
 export async function getStaticProps({ params }) {
@@ -68,7 +68,7 @@ export default function Post({ postData, allPostData }) {
             <title>{postData.metaTitle}</title>
             <meta name="description" content={postData.metaDesc} />
           </Head>
-          <div>
+          <div className="mb-12">
             <h1 className=" text-3xl md:text-4xl lg:text-5xl font-bold font-out py-3">
               {postData.title.toUpperCase()}
             </h1>

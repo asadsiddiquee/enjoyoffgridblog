@@ -22,7 +22,7 @@ function PostCard({ thumbnail, title, slug, description }) {
       </div>
       <h2>
         <Link href={`/${slug}`}>
-          <a className="text-xl font-out my-2 font-bold text-[#45810e] sm:cursor-pointer  ">
+          <a className="text-xl lg:text-2xl font-out my-2 font-bold text-[#000000] sm:cursor-pointer  ">
             {title}
           </a>
         </Link>
