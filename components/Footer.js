@@ -9,8 +9,11 @@ function Footer() {
   return (
     <div className="container mx-auto my-5 text-center sm:text-xl font-out flex flex-col ">
       <p className="inline-block">
-        Copyright - Enjoy Off Grid {yyyy} , All rights reserved
+        &copy;Enjoy Off Grid {yyyy}, All rights reserved
       </p>
+      <div className="inline-block text-xs">
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
     </div>
   );
 }
