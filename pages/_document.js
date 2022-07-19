@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
-
+import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="en">
@@ -7,7 +7,7 @@ export default function Document() {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossOrigin="true"
+          crossOrigin=""
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -17,11 +17,21 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.png" />
       </Head>
       <body>
         <Main />
         <NextScript />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'G-041E3P3SRE', 'auto');
+          ga('send', 'pageview');
+        `}
+        </Script>
+        <Script
+          src="https://www.google-analytics.com/analytics.js"
+          strategy="afterInteractive"
+        />
       </body>
     </Html>
   );

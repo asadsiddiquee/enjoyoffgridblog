@@ -6,7 +6,12 @@ const nextConfig = {
 
 module.exports = {
   nextConfig,
-  images: {
-    domains: ["res.cloudinary.com"],
+  webpack: (config, { isServer }) => {
+    // Done on build
+    if (isServer) {
+      require("./lib/generate-sitemap");
+    }
+
+    return config;
   },
 };
