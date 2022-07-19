@@ -85,10 +85,10 @@ export default function Post({ postData, allPostData }) {
                   Home
                 </a>
               </Link>
-              <p className="inline"> {" / "} </p>
-              <p className="inline font-thin border-b border-dashed border-black text-slate-500">
-                {postData.title}
-              </p>
+              <div className="inline"> {" / "} </div>
+              <div className="inline font-thin border-b border-dashed border-black text-slate-500">
+                {postData.slug}
+              </div>
             </div>
             <article className="prose prose-stone md:prose-xl lg:prose-2xl font-poppins prose-headings:font-out  ">
               <MDXRemote {...postData.mdxSource} components={components} />
