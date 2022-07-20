@@ -1,4 +1,4 @@
-import Image from "./Image";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -26,9 +26,9 @@ const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
               </Link>
             </div>
 
-            <div className="relative w-full h-20 sm:h-36 md:h-56 lg:h-60 hover:opacity-80 delay-75 transition-all ease-in-out hover:backdrop-brightness-75 rounded-lg sm:cursor-pointer">
+            <div>
               <Link href={prevPost ? `/${allPostData[index - 1].slug}` : ``}>
-                <div>
+                <div className="relative w-full h-20 sm:h-36 md:h-56 lg:h-60 hover:opacity-80 delay-75 transition-all ease-in-out hover:backdrop-brightness-75 rounded-lg sm:cursor-pointer">
                   <Image
                     src={`${allPostData[index - 1].thumbnail}`}
                     layout="fill"
@@ -66,9 +66,9 @@ const NextPrevPosts = ({ prevPost, nextPost, allPostData, index }) => {
               </Link>
             </div>
 
-            <div className="relative w-full h-20 sm:h-36 md:h-56 lg:h-60 sm:hover:opacity-80 delay-75 transition-all ease-in-out sm:hover:backdrop-brightness-75 rounded-lg sm:cursor-pointer">
+            <div>
               <Link href={nextPost ? `/${allPostData[index + 1].slug}` : ``}>
-                <div>
+                <div className="relative w-full h-20 sm:h-36 md:h-56 lg:h-60 sm:hover:opacity-80 delay-75 transition-all ease-in-out sm:hover:backdrop-brightness-75 rounded-lg sm:cursor-pointer">
                   <Image
                     src={`${allPostData[index + 1].thumbnail}`}
                     layout="fill"

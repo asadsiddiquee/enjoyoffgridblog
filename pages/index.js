@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import PostHolder from "../components/post section/PostHolder";
 import { getSortedPostsData } from "../lib/posts";
 import Sidebar from "../components/Sidebar";
+import CookieConsent from "react-cookie-consent";
 
 // -----------------
 //  change number from here

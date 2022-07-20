@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import CookieConsent from "react-cookie-consent";
 
 export default function Layout({ children, categories }) {
   return (
@@ -9,6 +10,16 @@ export default function Layout({ children, categories }) {
         <main className="">{children}</main>
       </div>
       <Footer />
+      <div className="text-center flex flex-col justify-center">
+        <CookieConsent
+          debug={true}
+          acceptOnScroll={true}
+          acceptOnScrollPercentage={30}
+          expires={365}
+        >
+          This website uses cookies to enhance the user experience.
+        </CookieConsent>
+      </div>
     </>
   );
 }
