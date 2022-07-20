@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout from "../components/layout";
 import PostHolder from "../components/post section/PostHolder";
 import { getSortedPostsData } from "../lib/posts";

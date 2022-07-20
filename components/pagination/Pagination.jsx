@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {

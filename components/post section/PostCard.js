@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "../Image";
 import Link from "next/link";
 
 function PostCard({ thumbnail, title, slug, description }) {
@@ -15,7 +15,6 @@ function PostCard({ thumbnail, title, slug, description }) {
               placeholder="blur"
               blurDataURL={`${thumbnail}`}
               objectFit="cover"
-              priority
             />
           </div>
         </Link>
