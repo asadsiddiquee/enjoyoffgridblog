@@ -12,7 +12,6 @@ export default function Layout({ children, categories }) {
       <Footer />
       <div className="text-center flex flex-col justify-center">
         <CookieConsent
-          debug={true}
           acceptOnScroll={true}
           acceptOnScrollPercentage={30}
           expires={365}
