@@ -11,25 +11,24 @@ function GAdvertisement({ advertiseShow, advertiseNumber }) {
   if (advertiseShow == true) {
     for (let i = 0; i < advertiseNumber; i++) {
       adN.push(
-        <div className="w-full h-[200px] block" key={i}>
-          <ins
-            className="adsbygoogle"
-            style={{ display: "block" }}
-            data-ad-client="ca-pub-8098281641773267"
-            data-ad-slot="2174125555"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          ></ins>
-        </div>
+        <ins
+          key={i}
+          className="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-client="ca-pub-8098281641773267"
+          data-ad-slot="2174125555"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
       );
     }
   }
-  console.log(adN);
+
   return (
     <>
       {adN.map((e) => {
         return (
-          <div className="my-2 w-full" key={e.key}>
+          <div className="my-2 w-full h-60 " key={e.key}>
             {e}
           </div>
         );
