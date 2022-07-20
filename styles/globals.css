@@ -4,6 +4,24 @@
 
 /* bg  #ffca00 */
 /* text #45810e */
+@font-face {
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-style: bold;
+    font-display: swap;
+    src: url('/fonts/Outfit-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('/fonts/Poppins-Regular.ttf');
+    
+  }
+
+
 @layer base {
     body {
         @apply scroll-smooth 

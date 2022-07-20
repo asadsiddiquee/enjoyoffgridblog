@@ -4,14 +4,19 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          href="/fonts/Outfit-Bold.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          href="/fonts/Poppins-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
         />
       </Head>
       <body>
