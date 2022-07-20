@@ -2,7 +2,7 @@ import React from "react";
 import Image from "../Image";
 import Link from "next/link";
 
-function PostCard({ thumbnail, title, slug, description }) {
+function PostCard({ thumbnail, title, slug, description, priority }) {
   return (
     <div className="text-center mb-5 max-w-sm mx-auto pb-4 border-b sm:border-none sm:max-h-max sm:mx-4 sm:hover:opacity-80 delay-75 transition-all ease-in-out sm:hover:backdrop-brightness-75 rounded-lg">
       <div>
@@ -15,6 +15,7 @@ function PostCard({ thumbnail, title, slug, description }) {
               placeholder="blur"
               blurDataURL={`${thumbnail}`}
               objectFit="cover"
+              {...priority}
             />
           </div>
         </Link>
