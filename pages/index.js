@@ -49,11 +49,7 @@ export default function Home({ allPostsData }) {
             </p>
           </div>
           <div className="pb-10 border-b-2 border-dashed border-[#ffca00]">
-            <PostHolder
-              posts={recentPost}
-              headline="MOST RECENT"
-              priority="priority"
-            />
+            <PostHolder posts={recentPost} headline="MOST RECENT" />
           </div>
           <div className="pt-10 border-t-2 border-dashed">
             <PostHolder posts={topPick} headline="Top Pick" />

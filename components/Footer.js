@@ -11,9 +11,6 @@ function Footer() {
       <p className="inline-block">
         &copy;Enjoy Off Grid {yyyy}, All rights reserved
       </p>
-      <div className="inline-block text-xs">
-        <a href="/sitemap.xml">Sitemap</a>
-      </div>
     </div>
   );
 }
