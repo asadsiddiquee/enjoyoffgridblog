@@ -56,7 +56,11 @@ export default function Home({ allPostsData }) {
             <PostHolder posts={topPick} headline="Top Pick" />
           </div>
         </div>
-        <Sidebar categories={categories} />
+        <Sidebar
+          categories={categories}
+          advertiseShow={true}
+          advertiseNumber={1}
+        />
       </div>
     </Layout>
   );

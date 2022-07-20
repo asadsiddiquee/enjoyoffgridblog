@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import GAdvertisement from "./GAdvertisement";
 
-function Sidebar(props) {
-  const { categories, hidden } = props;
+function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
   return (
     <div className="bg-slate-200/30 rounded-xl col-start-5 col-end-7 flex flex-col items-center">
+      {/* about Us */}
       <div
         className={`flex flex-col items-center pb-10 border-b-2 border-dashed  ${hidden}`}
       >
@@ -32,6 +33,7 @@ function Sidebar(props) {
           </a>
         </Link>
       </div>
+      {/* categories */}
       <div
         className="w-full my-6 md:mt-10 text-center space-y-2 "
         id="categories"
@@ -48,6 +50,10 @@ function Sidebar(props) {
           </div>
         ))}
       </div>
+      <GAdvertisement
+        advertiseShow={advertiseShow}
+        advertiseNumber={advertiseNumber}
+      />
     </div>
   );
 }
