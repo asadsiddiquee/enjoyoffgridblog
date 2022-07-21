@@ -1,24 +1,45 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import CookieConsent from "react-cookie-consent";
+import Script from "next/script";
 
 export default function Layout({ children, categories }) {
+  const googleCookieN = () => {
+    return ((adsbygoogle =
+      window.adsbygoogle || []).requestNonPersonalizedAds = 1);
+  };
+  const googleCookieY = () => {
+    (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
+  };
   return (
     <>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8098281641773267"
+        crossOrigin="anonymous"
+      />
+      <script>(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;</script>
+
       <Navbar />
       <div className="">
         <main className="">{children}</main>
       </div>
       <Footer />
-      <div className="text-center flex flex-col justify-center">
-        <CookieConsent
-          acceptOnScroll={true}
-          acceptOnScrollPercentage={30}
-          expires={365}
-        >
-          This website uses cookies to enhance the user experience.
-        </CookieConsent>
-      </div>
+
+      <CookieConsent
+        enableDeclineButton
+        flipButtons
+        setDeclineCookie={true}
+        expires={365}
+        onAccept={() => {
+          googleCookieY;
+        }}
+        onDecline={() => {
+          googleCookieN;
+        }}
+      >
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
     </>
   );
 }
