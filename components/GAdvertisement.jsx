@@ -13,7 +13,6 @@ function GAdvertisement({ advertiseShow, advertiseNumber }) {
       adN.push(
         <div key={i}>
           <ins
-            key={i}
             className="adsbygoogle"
             style={{ display: "block" }}
             data-ad-client="ca-pub-8098281641773267"
