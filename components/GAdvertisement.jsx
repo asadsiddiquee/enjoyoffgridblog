@@ -11,15 +11,17 @@ function GAdvertisement({ advertiseShow, advertiseNumber }) {
   if (advertiseShow == true) {
     for (let i = 0; i < advertiseNumber; i++) {
       adN.push(
-        <ins
-          key={i}
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client="ca-pub-8098281641773267"
-          data-ad-slot="2174125555"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins>
+        <div key={i}>
+          <ins
+            key={i}
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client="ca-pub-8098281641773267"
+            data-ad-slot="2174125555"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+        </div>
       );
     }
   }
