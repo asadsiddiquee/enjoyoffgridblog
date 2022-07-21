@@ -13,11 +13,11 @@ export default function Layout({ children, categories }) {
   };
   return (
     <>
-      <Script
+      {/* <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8098281641773267"
         crossOrigin="anonymous"
-      />
+      /> */}
       {/* <script>(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;</script> */}
 
       <Navbar />
@@ -26,7 +26,7 @@ export default function Layout({ children, categories }) {
       </div>
       <Footer />
 
-      <CookieConsent
+      {/* <CookieConsent
         enableDeclineButton
         flipButtons
         setDeclineCookie={true}
@@ -39,7 +39,7 @@ export default function Layout({ children, categories }) {
         }}
       >
         This website uses cookies to enhance the user experience.
-      </CookieConsent>
+      </CookieConsent> */}
     </>
   );
 }

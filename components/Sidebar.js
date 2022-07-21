@@ -50,10 +50,10 @@ function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
           </div>
         ))}
       </div>
-      <GAdvertisement
+      {/* <GAdvertisement
         advertiseShow={advertiseShow}
         advertiseNumber={advertiseNumber}
-      />
+      /> */}
     </div>
   );
 }
