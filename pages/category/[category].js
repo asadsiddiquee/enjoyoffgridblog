@@ -11,10 +11,10 @@ import PaginationPost from "../../components/pagination/PaginationPost";
 export const getStaticProps = async ({ params }) => {
   const { category } = params;
 
-  const posts = await getSortedPostsData().filter((post) =>
+  const posts = getSortedPostsData().filter((post) =>
     post.category.includes(category)
   );
-  const allPostsData = await getSortedPostsData();
+  const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,

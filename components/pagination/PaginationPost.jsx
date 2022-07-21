@@ -13,7 +13,7 @@ function PaginationPost(props) {
 
   useEffect(() => {
     setPosts(allPostsData);
-  }, []);
+  }, [allPostsData]);
 
   //   get current posts
   const indexOfLastPost = currentPage * postsPerPage;

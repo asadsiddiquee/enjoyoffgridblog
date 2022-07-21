@@ -42,10 +42,10 @@ function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
         {Array.from(categories).map((category) => (
           <div
             key={category}
-            className="inline space-x-2 text-lg bg-[#ffca00] hover:underline  "
+            className="inline mx-2 text-lg bg-[#ffca00] hover:underline  "
           >
-            <Link href={`/category/${category}`}>
-              <a className="text-center font-out"> {category}</a>
+            <Link key={category} href={`/category/${category}`}>
+              <a className="text-center font-out">{category}</a>
             </Link>
           </div>
         ))}

@@ -40,7 +40,7 @@ export default function Home({ allPostsData }) {
               content="Blog about homesteading and living off the grid. information about off grid power sources, from solar energy to wind. Off grid farm for self sunstainable living, everything is covered "
             />
           </Head>
-          <div className="mt-20 mb-10 border-b-2 border-dashed pb-5 ">
+          <div className="mt-20 md:mt-10 mb-10 border-b-2 border-dashed pb-5 ">
             <h1 className="font-out text-4xl md:text-5xl font-bold text-center mb-10">
               ENJOY OFF GRID LIVING AND HOMESTEADING
             </h1>
