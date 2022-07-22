@@ -18,22 +18,25 @@ export default function Document() {
           type="font/ttf"
           crossOrigin="anonymous"
         />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-041E3P3SRE"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-041E3P3SRE', {
+              page_path: window.location.pathname,
+            });
+                `}
+        </Script>
       </Head>
       <body>
         <Main />
-        <NextScript />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', 'G-041E3P3SRE', 'auto');
-          ga('send', 'pageview');
-        `}
-        </Script>
-        <Script
-          src="https://www.google-analytics.com/analytics.js"
-          strategy="afterInteractive"
-        />
-        ;
+        <NextScript />;
       </body>
     </Html>
   );
