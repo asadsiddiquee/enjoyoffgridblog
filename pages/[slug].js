@@ -90,7 +90,7 @@ export default function Post({ postData, allPostData }) {
                 {postData.slug}
               </div>
             </div>
-            <article className="prose prose-stone md:prose-xl lg:prose-2xl font-poppins prose-headings:font-out  ">
+            <article className="prose prose-stone md:prose-xl font-poppins prose-headings:font-out  ">
               <MDXRemote {...postData.mdxSource} components={components} />
             </article>
           </div>
