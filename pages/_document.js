@@ -30,13 +30,13 @@ export default function Document() {
             gtag('js', new Date());
             gtag('config', 'G-041E3P3SRE', {
               page_path: window.location.pathname,
-            });
+            })
                 `}
         </Script>
       </Head>
       <body>
         <Main />
-        <NextScript />;
+        <NextScript />
       </body>
     </Html>
   );
