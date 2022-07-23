@@ -1,4 +1,4 @@
-import Image from "./Image";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import GAdvertisement from "./GAdvertisement";
@@ -15,12 +15,12 @@ function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
         </h2>
         <div className="relative h-[107px] w-[100px]">
           <Image
-            src="/logo.png"
+            src="https://res.cloudinary.com/enjoyoffgrid/image/upload/v1658614433/assets/logo_aktait.png"
             objectFit="contain"
             layout="fill"
             alt="logo"
             placeholder="blur"
-            blurDataURL="/logo.png"
+            blurDataURL="https://res.cloudinary.com/enjoyoffgrid/image/upload/v1658614433/assets/logo_aktait.png"
           />
         </div>
         <p className="px-4 text-center font-out text-[#29470d]">

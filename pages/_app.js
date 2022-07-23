@@ -1,6 +1,5 @@
 import Head from "next/head";
 import "../styles/globals.css";
-import favicon from "../public/favicon.ico";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
@@ -21,7 +20,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="icon" href={favicon.src} />
+        <link
+          rel="icon"
+          href="https://res.cloudinary.com/enjoyoffgrid/image/upload/v1658614433/assets/favicon_uhmrd7.ico"
+        />
       </Head>
       <Component {...pageProps} />
     </>

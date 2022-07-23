@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image from "./Image";
+import Image from "next/image";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
@@ -16,12 +16,12 @@ function Navbar() {
         <Link href="/">
           <div className="sm:hover:cursor-pointer relative w-[100px] h-[107px]">
             <Image
-              src="/logo.png"
+              src="https://res.cloudinary.com/enjoyoffgrid/image/upload/v1658614433/assets/logo_aktait.png"
               alt="logo"
               objectFit="contain"
               layout="fill"
               placeholder="blur"
-              blurDataURL="/logo.png"
+              blurDataURL="https://res.cloudinary.com/enjoyoffgrid/image/upload/v1658614433/assets/logo_aktait.png"
             />
           </div>
         </Link>
