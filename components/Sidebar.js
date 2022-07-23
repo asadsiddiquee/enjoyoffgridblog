@@ -35,7 +35,7 @@ function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
       </div>
       {/* categories */}
       <div
-        className="w-full my-6 md:mt-10 text-center space-y-2 "
+        className="w-full px-2 my-6 md:mt-10 text-center space-y-2 "
         id="categories"
       >
         <h2 className="font-out font-bold text-2xl mb-8 ">Categories</h2>

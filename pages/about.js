@@ -21,8 +21,8 @@ function about({ allPostsData }) {
   const categories = new Set(allPostsData.map((post) => post.category).flat());
   return (
     <Layout>
-      <div className="container mx-auto sm:grid grid-cols-6 gap-6">
-        <div className="col-start-1 col-end-5 px-2 py-4  md:px-8 ">
+      <div className="container mx-auto sm:grid grid-cols-6 gap-6 px-2 md:px-8 ">
+        <div className="col-start-1 col-end-5  py-4  ">
           <Head>
             <title>Enjoy off grid and homesteading blog | About us </title>
             <meta

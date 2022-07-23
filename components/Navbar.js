@@ -51,7 +51,7 @@ function Navbar() {
         className={
           nav
             ? "hidden"
-            : "sm:hidden top-24 right-0 fixed pt-14 w-full h-full bg-white flex flex-col justify-start items-center text-3xl space-y-4"
+            : "sm:hidden top-28 right-0 fixed pt-14 w-full h-full bg-white flex flex-col justify-start items-center text-3xl space-y-4"
         }
       >
         <Link href="https://www.instagram.com/enjoytheoffgrid">
