@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }) {
           rel="icon"
           href="https://res.cloudinary.com/enjoyoffgrid/image/upload/v1658614433/assets/favicon_uhmrd7.ico"
         />
+        <meta name="robots" content="all" />
       </Head>
       <Component {...pageProps} />
     </>
