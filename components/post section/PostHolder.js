@@ -1,5 +1,5 @@
 import PostCard from "./PostCard";
-import React from "react";
+
 import Link from "next/link";
 
 const PostHolder = ({ posts, headline, seeAllPostHidden }) => {

@@ -6,24 +6,24 @@ export default function Document() {
       <Head>
         <link
           rel="preload"
-          href="/fonts/Outfit-Bold.ttf"
+          href="/fonts/Outfit-Bold.woff2"
           as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
+          type="font/woff2"
+          crossOrigin="true"
         />
         <link
           rel="preload"
-          href="/fonts/Poppins-Regular.ttf"
+          href="/fonts/Poppins-Regular.woff2"
           as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
+          type="font/woff2"
+          crossOrigin="true"
         />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-041E3P3SRE"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

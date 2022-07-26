@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import GAdvertisement from "./GAdvertisement";
 
 function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
   return (
@@ -24,7 +22,7 @@ function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
           />
         </div>
         <p className="px-4 text-center font-out text-[#29470d]">
-          We are a group of people with the diverse profession and having common
+          We are a group of people with diverse profession and having common
           interest in living off grid life
         </p>
         <Link href="/about">
@@ -50,10 +48,6 @@ function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
           </div>
         ))}
       </div>
-      {/* <GAdvertisement
-        advertiseShow={advertiseShow}
-        advertiseNumber={advertiseNumber}
-      /> */}
     </div>
   );
 }

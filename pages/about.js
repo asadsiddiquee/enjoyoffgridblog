@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+
 import Layout from "../components/layout";
 import PostHolder from "../components/post section/PostHolder";
 import Sidebar from "../components/Sidebar";
