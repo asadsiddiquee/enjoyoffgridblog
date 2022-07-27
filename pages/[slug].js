@@ -65,7 +65,7 @@ export default function Post({ postData, allPostData }) {
       <div className="container mx-auto sm:grid grid-cols-6 gap-6 px-2 md:px-8">
         <div className="col-start-1 col-end-5 py-4 container mx-auto ">
           <Head>
-            <title>{postData.metaTitle}</title>
+            <title>{postData.metaTitle} - enjoy off grid</title>
             <meta name="description" content={postData.metaDesc} />
           </Head>
           <div className="mb-12">
