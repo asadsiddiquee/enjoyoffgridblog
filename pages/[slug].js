@@ -1,5 +1,5 @@
 import { getAllPostSlugs, getPostData, getSortedPostsData } from "../lib/posts";
-import Image from "next/image";
+import Image from "next/future/image";
 import Link from "next/link";
 import Head from "next/head";
 import { MDXRemote } from "next-mdx-remote";

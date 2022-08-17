@@ -14,6 +14,7 @@ function PostCard({ thumbnail, title, slug, description }) {
               placeholder="blur"
               blurDataURL={`${thumbnail}`}
               objectFit="cover"
+              priority
             />
           </div>
         </Link>
