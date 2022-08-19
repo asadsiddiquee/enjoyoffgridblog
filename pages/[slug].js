@@ -7,6 +7,8 @@ import Layout from "../components/layout";
 import Sidebar from "../components/Sidebar";
 import Social from "../components/Social";
 import NextPrevPosts from "../components/NextPrevPosts";
+import GoogleAds from "../components/GoogleAds";
+
 // -----------------
 
 // components to pass toward mdx. only reason i'm sticking with mdx
@@ -60,6 +62,7 @@ export default function Post({ postData, allPostData }) {
   index == 0 ? (prevPost = false) : (prevPost = true);
   index == allPostData.length - 1 ? (nextPost = false) : (nextPost = true);
   const categories = new Set(allPostData.map((post) => post.category).flat());
+
   return (
     <Layout>
       <div className="container mx-auto sm:grid grid-cols-6 gap-6 px-2 md:px-8">
@@ -94,6 +97,13 @@ export default function Post({ postData, allPostData }) {
               <MDXRemote {...postData.mdxSource} components={components} />
             </article>
           </div>
+          {/* <div className="w-full block md:hidden">
+            <GoogleAds adId="2340464282" />
+          </div> */}
+          <div className="w-full hidden md:block">
+            <GoogleAds adId="2174125555" />
+          </div>
+
           <NextPrevPosts
             prevPost={prevPost}
             nextPost={nextPost}

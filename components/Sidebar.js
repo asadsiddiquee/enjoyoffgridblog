@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import GoogleAds from "./GoogleAds";
 function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
   return (
     <div className="bg-slate-200/30 rounded-xl col-start-5 col-end-7 flex flex-col items-center">
@@ -31,6 +31,11 @@ function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
           </a>
         </Link>
       </div>
+      {/* ads */}
+      <div className="w-full">
+        <GoogleAds adId="7770537325" />
+      </div>
+
       {/* categories */}
       <div
         className="w-full px-2 my-6 md:mt-10 text-center space-y-2 "
@@ -47,6 +52,9 @@ function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
             </Link>
           </div>
         ))}
+      </div>
+      <div className="w-full hidden md:block">
+        <GoogleAds adId="7770537325" />
       </div>
     </div>
   );
