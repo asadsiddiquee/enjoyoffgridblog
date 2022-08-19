@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 
-async function GoogleAds(adId) {
+function GoogleAds(adId) {
   useEffect(() => {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }, []);
