@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import GoogleAds from "./GoogleAds";
 
-function Sidebar({ categories, hidden, advertiseShow, advertiseNumber }) {
+function Sidebar({ categories, hidden }) {
   return (
     <div className="bg-slate-200/30 rounded-xl col-start-5 col-end-7 flex flex-col items-center">
       {/* about Us */}
