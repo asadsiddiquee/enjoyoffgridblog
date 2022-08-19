@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import GoogleAds from "./GoogleAds";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+const GoogleAds = dynamic(() => import("../components/GoogleAds"), {
+  suspense: true,
+});
 
 function Sidebar({ categories, hidden }) {
   return (
@@ -33,9 +37,11 @@ function Sidebar({ categories, hidden }) {
         </Link>
       </div>
       {/* ads */}
-      <div className="w-full flex">
-        <GoogleAds adId="2340464282" />
-      </div>
+      <Suspense fallback={`Loading...`}>
+        <div className="w-full flex">
+          <GoogleAds adId="2340464282" />
+        </div>
+      </Suspense>
       {/* categories */}
       <div
         className="w-full px-2 my-6 md:mt-10 text-center space-y-2 "
@@ -53,9 +59,11 @@ function Sidebar({ categories, hidden }) {
           </div>
         ))}
       </div>
-      <div className="w-full flex">
-        <GoogleAds adId="2340464282" />
-      </div>
+      <Suspense fallback={`Loading...`}>
+        <div className="w-full flex">
+          <GoogleAds adId="2340464282" />
+        </div>
+      </Suspense>
     </div>
   );
 }
