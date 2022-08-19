@@ -93,7 +93,9 @@ export default function Post({ postData, allPostData }) {
               <MDXRemote {...postData.mdxSource} components={components} />
             </article>
           </div>
-
+          <div className="w-full flex">
+            <GoogleAds adId="2340464282" />
+          </div>
           <NextPrevPosts
             prevPost={prevPost}
             nextPost={nextPost}

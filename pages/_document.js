@@ -33,12 +33,12 @@ export default function Document() {
             })
                 `}
         </Script>
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8098281641773267"
           crossOrigin="true"
           strategy="lazyOnload"
-        ></Script>
+        ></script>
       </Head>
       <body>
         <Main />
