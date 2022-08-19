@@ -8,7 +8,6 @@ import Sidebar from "../components/Sidebar";
 import Social from "../components/Social";
 import NextPrevPosts from "../components/NextPrevPosts";
 import GoogleAds from "../components/GoogleAds";
-
 // -----------------
 
 // components to pass toward mdx. only reason i'm sticking with mdx
@@ -24,6 +23,8 @@ const components = {
     />
   ),
   Link,
+
+  GoogleAds,
 };
 
 // getting data from mdx
@@ -97,11 +98,8 @@ export default function Post({ postData, allPostData }) {
               <MDXRemote {...postData.mdxSource} components={components} />
             </article>
           </div>
-          {/* <div className="w-full block md:hidden">
+          <div className="w-full flex">
             <GoogleAds adId="2340464282" />
-          </div> */}
-          <div className="w-full hidden md:block">
-            <GoogleAds adId="2174125555" />
           </div>
 
           <NextPrevPosts

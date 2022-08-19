@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 function GoogleAds(adId) {
   useEffect(() => {
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
   }, []);
   return (
     <div className="w-full">
