@@ -6,7 +6,7 @@ function GoogleAds(adId) {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }, []);
   return (
-    <div className="w-full">
+    <div className="w-full lazyhtml " data-lazyhtml onvisible>
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}

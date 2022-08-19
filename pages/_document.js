@@ -39,6 +39,11 @@ export default function Document() {
           crossOrigin="true"
           strategy="lazyOnload"
         ></script>
+        <script
+          async
+          src="https://cdn.jsdelivr.net/npm/lazyhtml@1.2.3/dist/lazyhtml.min.js"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
       <body>
         <Main />
