@@ -33,11 +33,11 @@ export default function Document() {
             })
                 `}
         </Script>
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8098281641773267"
-          crossOrigin="anonymous"
-        />
+          crossOrigin="true"
+        ></script>
       </Head>
       <body>
         <Main />
