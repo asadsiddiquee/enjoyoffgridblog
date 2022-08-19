@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 import Sidebar from "../components/Sidebar";
 import Social from "../components/Social";
 import NextPrevPosts from "../components/NextPrevPosts";
-import GoogleAds from "../components/GoogleAds";
+// import GoogleAds from "../components/GoogleAds";
 // -----------------
 
 // components to pass toward mdx. only reason i'm sticking with mdx
@@ -98,9 +98,9 @@ export default function Post({ postData, allPostData }) {
               <MDXRemote {...postData.mdxSource} components={components} />
             </article>
           </div>
-          <div className="w-full flex">
+          {/* <div className="w-full flex">
             <GoogleAds adId="2340464282" />
-          </div>
+          </div> */}
 
           <NextPrevPosts
             prevPost={prevPost}
