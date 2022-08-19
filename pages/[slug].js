@@ -76,10 +76,6 @@ export default function Post({ postData, allPostData }) {
               {postData.title.toUpperCase()}
             </h1>
 
-            {/* <p className="italic text-md text-cyan-700 my-2">
-                           Published on : {postData.date}
-                         </p> */}
-
             <Social postData={postData} />
 
             <div className="font-out text-sm md:text-base lg:text-lg py-2 mb-4 xl:text-center">
