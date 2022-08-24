@@ -7,11 +7,7 @@ import Layout from "../components/layout";
 import Sidebar from "../components/Sidebar";
 import Social from "../components/Social";
 import NextPrevPosts from "../components/NextPrevPosts";
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
-const GoogleAds = dynamic(() => import("../components/GoogleAds"), {
-  suspense: true,
-});
+
 // -----------------
 
 // components to pass toward mdx. only reason i'm sticking with mdx
@@ -27,7 +23,6 @@ const components = {
     />
   ),
   Link,
-  GoogleAds,
 };
 
 // getting data from mdx
@@ -97,11 +92,7 @@ export default function Post({ postData, allPostData }) {
               <MDXRemote {...postData.mdxSource} components={components} />
             </article>
           </div>
-          <Suspense fallback={`Loading...`}>
-            <div className="w-full flex">
-              <GoogleAds adId="2340464282" />
-            </div>
-          </Suspense>
+
           <NextPrevPosts
             prevPost={prevPost}
             nextPost={nextPost}
