@@ -77,7 +77,7 @@ export default function Post({ postData, allPostData }) {
 
             <Social postData={postData} />
 
-            <div className="font-out text-sm md:text-base lg:text-lg py-2 mb-4 xl:text-center">
+            <div className="font-out text-md md:text-base lg:text-lg py-2 mb-4 xl:text-center">
               <Link href="/">
                 <a className="inline-block font-thin border-b border-dashed border-black  ">
                   Home
@@ -88,7 +88,7 @@ export default function Post({ postData, allPostData }) {
                 {postData.slug}
               </div>
             </div>
-            <article className="prose prose-stone md:prose-xl font-poppins prose-headings:font-out  ">
+            <article className="prose prose-lg prose-stone md:prose-xl font-poppins prose-headings:font-out  ">
               <MDXRemote {...postData.mdxSource} components={components} />
             </article>
           </div>

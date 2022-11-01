@@ -26,7 +26,7 @@ function Sidebar({ categories, hidden }) {
           interest in living off grid life
         </p>
         <Link href="/about">
-          <a className="bg-[#ffca00] font-poppins mt-2 cursor-pointer hover:underline">
+          <a className="bg-[#ffca00] font-poppins mt-2 p-2 cursor-pointer hover:underline">
             More About Us
           </a>
         </Link>
@@ -34,14 +34,14 @@ function Sidebar({ categories, hidden }) {
 
       {/* categories */}
       <div
-        className="w-full px-2 my-6 md:mt-10 text-center space-y-2 "
+        className="w-full px-2 my-6 md:mt-10  text-center space-y-2 "
         id="categories"
       >
         <h2 className="font-out font-bold text-2xl mb-8 ">Categories</h2>
         {Array.from(categories).map((category) => (
           <div
             key={category}
-            className="inline mx-2 text-lg bg-[#ffca00] hover:underline  "
+            className="inline-block mx-1 p-2 text-lg bg-[#ffca00] hover:underline  "
           >
             <Link key={category} href={`/category/${category}`}>
               <a className="text-center font-out">{category}</a>
