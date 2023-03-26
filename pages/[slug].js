@@ -1,12 +1,12 @@
-import { getAllPostSlugs, getPostData, getSortedPostsData } from "../lib/posts";
-import Image from "next/future/image";
-import Link from "next/link";
-import Head from "next/head";
-import { MDXRemote } from "next-mdx-remote";
-import Layout from "../components/layout";
-import Sidebar from "../components/Sidebar";
-import Social from "../components/Social";
-import NextPrevPosts from "../components/NextPrevPosts";
+import { getAllPostSlugs, getPostData, getSortedPostsData } from '../lib/posts';
+import Image from 'next/future/image';
+import Link from 'next/link';
+import Head from 'next/head';
+import { MDXRemote } from 'next-mdx-remote';
+import Layout from '../components/layout';
+import Sidebar from '../components/Sidebar';
+import Social from '../components/Social';
+import NextPrevPosts from '../components/NextPrevPosts';
 
 // -----------------
 
@@ -83,12 +83,12 @@ export default function Post({ postData, allPostData }) {
                   Home
                 </a>
               </Link>
-              <div className="inline"> {" / "} </div>
+              <div className="inline"> {' / '} </div>
               <div className="inline font-thin border-b border-dashed border-black text-slate-500">
-                {postData.slug}
+                {postData.title}
               </div>
             </div>
-            <article className="prose prose-lg prose-stone md:prose-xl font-poppins prose-headings:font-out  ">
+            <article className="prose prose-base prose-slate md:prose-lg font-poppins prose-headings:font-out  ">
               <MDXRemote {...postData.mdxSource} components={components} />
             </article>
           </div>

@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Layout from "../components/layout";
-import PostHolder from "../components/post section/PostHolder";
-import Sidebar from "../components/Sidebar";
-import { getSortedPostsData } from "../lib/posts";
+import Head from 'next/head';
+import Layout from '../components/layout';
+import PostHolder from '../components/post section/PostHolder';
+import Sidebar from '../components/Sidebar';
+import { getSortedPostsData } from '../lib/posts';
 // -----------------
 
 export async function getStaticProps() {
