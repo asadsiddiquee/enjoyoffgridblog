@@ -9,20 +9,20 @@ module.exports = {
   webpack: (config, { isServer }) => {
     // Done on build
     if (isServer) {
-      require("./lib/generate-sitemap");
+      require('./lib/generate-sitemap');
     }
 
     return config;
   },
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ['res.cloudinary.com'],
   },
 
   async redirects() {
     return [
       {
-        source: "/[slug]",
-        destination: "/",
+        source: '/[slug]',
+        destination: '/',
         permanent: true,
       },
     ];
@@ -30,6 +30,7 @@ module.exports = {
   experimental: {
     images: {
       allowFutureImage: true,
+      nextScriptWorkers: true,
     },
   },
 };

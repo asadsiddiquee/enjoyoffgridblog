@@ -23,9 +23,9 @@ export default function Document() {
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-041E3P3SRE"
-          strategy="lazyOnload"
+          strategy="worker"
         />
-        <Script id="google-analytics" strategy="lazyOnload">
+        <Script id="google-analytics" strategy="worker">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
