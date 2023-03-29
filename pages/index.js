@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Layout from "../components/layout";
-import PostHolder from "../components/post section/PostHolder";
-import { getSortedPostsData } from "../lib/posts";
-import Sidebar from "../components/Sidebar";
+import Head from 'next/head';
+import Layout from '../components/layout';
+import PostHolder from '../components/post section/PostHolder';
+import { getSortedPostsData } from '../lib/posts';
+import Sidebar from '../components/Sidebar';
 
 // -----------------
 //  change number from here

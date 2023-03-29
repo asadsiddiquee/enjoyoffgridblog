@@ -1,5 +1,6 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
+import { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
+
 export default function Document() {
   return (
     <Html lang="en">
@@ -18,6 +19,7 @@ export default function Document() {
           type="font/woff2"
           crossOrigin="true"
         />
+
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-041E3P3SRE"
