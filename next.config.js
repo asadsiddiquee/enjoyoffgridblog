@@ -30,7 +30,6 @@ module.exports = {
   experimental: {
     images: {
       allowFutureImage: true,
-      nextScriptWorkers: true,
     },
   },
 };

@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@builder.io/partytown": "^0.7.6",
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.7",
     "globby": "^11.0.1",
